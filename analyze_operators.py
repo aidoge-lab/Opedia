@@ -31,36 +31,50 @@ class OperatorAnalyzer:
     def _analyze_model_structure(self, model_data: str, model_name: str):
         """Analyze a single model's structure and extract operator information."""
         def extract_operators(text: str):
-            # 常见的PyTorch算子
-            operators = {
-                'Conv2d': 'convolution',
-                'BatchNorm2d': 'normalization',
-                'ReLU': 'activation',
-                'MaxPool2d': 'pooling',
-                'AdaptiveAvgPool2d': 'pooling',
-                'Linear': 'linear',
-                'Flatten': 'reshape',
-                'Identity': 'activation'
-            }
-            
+            """ model structure example:
+            GPT2Model(
+                (wte): Embedding(50257, 768)
+                (wpe): Embedding(1024, 768)
+                (drop): Dropout(p=0.1, inplace=False)
+                (h): ModuleList(
+                    (0-11): 12 x GPT2Block(
+                    (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                    (attn): GPT2Attention(
+                        (c_attn): Conv1D()
+                        (c_proj): Conv1D()
+                        (attn_dropout): Dropout(p=0.1, inplace=False)
+                        (resid_dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                    (mlp): GPT2MLP(
+                        (c_fc): Conv1D()
+                        (c_proj): Conv1D()
+                        (act): NewGELUActivation()
+                        (dropout): Dropout(p=0.1, inplace=False)
+                    )
+                    )
+                )
+                (ln_f): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                )
+            """
+
             # 使用正则表达式提取算子及其参数
             import re
             for line in text.split('\n'):
-                for op_name, op_type in operators.items():
-                    match = re.search(f"{op_name}\((.*?)\)", line)
-                    if match:
-                        params = match.group(1)
-                        if op_name not in self.operator_usage:
-                            self.operator_usage[op_name] = {}
-                        if model_name not in self.operator_usage[op_name]:
-                            self.operator_usage[op_name][model_name] = []
-                        # 解析参数
-                        param_dict = {}
-                        for param in params.split(', '):
-                            if '=' in param:
-                                key, value = param.split('=')
-                                param_dict[key.strip()] = value.strip()
-                        self.operator_usage[op_name][model_name].append(param_dict)
+                match = re.search(r"(\w+)\((.*?)\)", line)
+                if match:
+                    op_name, params = match.groups()
+                    if op_name not in self.operator_usage:
+                        self.operator_usage[op_name] = {}
+                    if model_name not in self.operator_usage[op_name]:
+                        self.operator_usage[op_name][model_name] = []
+                    # 解析参数
+                    param_dict = {}
+                    for param in params.split(', '):
+                        if '=' in param:
+                            key, value = param.split('=')
+                            param_dict[key.strip()] = value.strip()
+                    self.operator_usage[op_name][model_name].append(param_dict)
 
         extract_operators(model_data)
 
