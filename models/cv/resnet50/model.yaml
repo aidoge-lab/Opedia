@@ -14,6 +14,8 @@ desc:
   "ResNet (Residual Network) is a convolutional neural network that democratized the concepts of residual learning and skip connections. 
   This enables to train much deeper models."
 
+published_year: 2016
+
 huggingface:
   model_id: "microsoft/resnet50"
   task: "image-classification"
