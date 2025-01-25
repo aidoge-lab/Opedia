@@ -1,0 +1,4 @@
+Flatten:
+  cv/resnet50:
+  - end_dim: '-1'
+    start_dim: '1'

@@ -1,0 +1,214 @@
+BatchNorm2d:
+  cv/resnet50:
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'
+  - affine: 'True'
+    eps: 1e-05
+    momentum: '0.1'
+    track_running_stats: 'True'

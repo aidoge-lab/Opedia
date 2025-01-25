@@ -1,0 +1,3 @@
+AdaptiveAvgPool2d:
+  cv/resnet50:
+  - output_size: (1

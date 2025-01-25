@@ -1,0 +1,7 @@
+MaxPool2d:
+  cv/resnet50:
+  - ceil_mode: 'False'
+    dilation: '1'
+    kernel_size: '3'
+    padding: '1'
+    stride: '2'
