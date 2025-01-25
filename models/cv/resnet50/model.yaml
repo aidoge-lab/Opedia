@@ -1,0 +1,20 @@
+paper:
+  "@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}}"
+
+author:
+  - Kaiming He
+  - Xiangyu Zhang
+
+desc:
+  "ResNet (Residual Network) is a convolutional neural network that democratized the concepts of residual learning and skip connections. 
+  This enables to train much deeper models."
+
+huggingface:
+  model_id: "microsoft/resnet50"
+  task: "image-classification"
+  link: "https://huggingface.co/microsoft/resnet50"
