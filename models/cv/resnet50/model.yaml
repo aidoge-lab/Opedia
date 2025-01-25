@@ -9,6 +9,8 @@ paper:
 author:
   - Kaiming He
   - Xiangyu Zhang
+  - Shaoqing Ren
+  - Jian Sun
 
 desc:
   "ResNet (Residual Network) is a convolutional neural network that democratized the concepts of residual learning and skip connections. 
