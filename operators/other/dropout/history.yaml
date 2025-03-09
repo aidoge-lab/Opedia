@@ -1,0 +1,10 @@
+Dropout:
+  nlp/gpt2:
+  - inplace: 'False'
+    p: '0.1'
+  - inplace: 'False'
+    p: '0.1'
+  - inplace: 'False'
+    p: '0.1'
+  - inplace: 'False'
+    p: '0.1'
